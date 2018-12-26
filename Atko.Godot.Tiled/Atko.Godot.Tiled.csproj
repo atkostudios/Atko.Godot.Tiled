@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFramework>netstandard2.0</TargetFramework>
+      <PackageId>Atko.Godot.Tiled</PackageId>
+      <Version>0.0.3.2</Version>
+      <Authors>Bombfuse</Authors>
+      <Company>Atko</Company>
+      <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+      <Description>A tool for easily importing and managing Tiled maps in the Godot game engine.</Description>
+  </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="GodotSharp">
+            <HintPath>../../.mono/assemblies/GodotSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Xml.Linq" Version="3.5.21022.801" />
+  </ItemGroup>
+
+</Project>
