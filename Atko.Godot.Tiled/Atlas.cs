@@ -57,10 +57,6 @@ namespace Atko.Godot.Tiled {
                         break;
                 }
             }
-        }
-
-        public override void _Ready() {
-            base._Ready();
             
             Slices.ForEach(slice => InsertSlice(slice));
         }
