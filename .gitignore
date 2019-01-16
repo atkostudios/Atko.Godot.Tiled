@@ -1,3 +1,7 @@
+mono_crash.*
+packages
+.import
+.mono
 .idea
 Atko.Godot.Tiled.sln.DotSettings.user
 bin

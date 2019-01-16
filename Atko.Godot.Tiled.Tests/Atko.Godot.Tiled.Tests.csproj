@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.mono/temp/bin/$(Configuration)</OutputPath>
+    <RootNamespace>Atko.Godot.Tiled.Tests</RootNamespace>
+    <AssemblyName>Atko.Godot.Tiled.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <BaseIntermediateOutputPath>.mono/temp/obj</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Tools|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>DEBUG;TOOLS;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Atko.Godot.Tiled, Version=0.0.3.2, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\Atko.Godot.Tiled.0.0.3.2\lib\netstandard2.0\Atko.Godot.Tiled.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GodotSharp">
+      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
+      <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharpEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\System.Xml.Linq.3.5.21022.801\lib\net20\System.Xml.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Init.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\buch-outdoor.png" />
+    <Content Include="examples\buch-outdoor.png.import" />
+    <Content Include="examples\desert.tmx" />
+    <Content Include="examples\desert.tsx" />
+    <Content Include="examples\hexagonal-mini.tmx" />
+    <Content Include="examples\hexmini.png" />
+    <Content Include="examples\hexmini.png.import" />
+    <Content Include="examples\isometric_grass_and_water.png" />
+    <Content Include="examples\isometric_grass_and_water.png.import" />
+    <Content Include="examples\isometric_grass_and_water.tmx" />
+    <Content Include="examples\isometric_staggered_grass_and_water.tmx" />
+    <Content Include="examples\orthogonal-outside.tmx" />
+    <Content Include="examples\perspective_walls.png" />
+    <Content Include="examples\perspective_walls.png.import" />
+    <Content Include="examples\perspective_walls.tmx" />
+    <Content Include="examples\perspective_walls.tsx" />
+    <Content Include="examples\rpg\beach_tileset.png" />
+    <Content Include="examples\rpg\beach_tileset.png.import" />
+    <Content Include="examples\rpg\beach_tileset.tsx" />
+    <Content Include="examples\rpg\island.tmx" />
+    <Content Include="examples\rpg\readme.txt" />
+    <Content Include="examples\sewers.tmx" />
+    <Content Include="examples\sewer_automap\rules.txt" />
+    <Content Include="examples\sewer_automap\rules_sewers.png" />
+    <Content Include="examples\sewer_automap\rules_sewers.png.import" />
+    <Content Include="examples\sewer_automap\rule_001.tmx" />
+    <Content Include="examples\sewer_automap\rule_002.tmx" />
+    <Content Include="examples\sewer_automap\rule_003.tmx" />
+    <Content Include="examples\sewer_automap\rule_004.tmx" />
+    <Content Include="examples\sewer_automap\rule_005.tmx" />
+    <Content Include="examples\sewer_automap\rule_006.tmx" />
+    <Content Include="examples\sewer_automap\rule_007.tmx" />
+    <Content Include="examples\sewer_automap\rule_008.tmx" />
+    <Content Include="examples\sewer_automap\rule_009.tmx" />
+    <Content Include="examples\sewer_automap\sewers.tmx" />
+    <Content Include="examples\sewer_tileset.png" />
+    <Content Include="examples\sewer_tileset.png.import" />
+    <Content Include="examples\sticker-knight\map\alter.png" />
+    <Content Include="examples\sticker-knight\map\alter.png.import" />
+    <Content Include="examples\sticker-knight\map\backgroundArch.png" />
+    <Content Include="examples\sticker-knight\map\backgroundArch.png.import" />
+    <Content Include="examples\sticker-knight\map\backgroundMountain.png" />
+    <Content Include="examples\sticker-knight\map\backgroundMountain.png.import" />
+    <Content Include="examples\sticker-knight\map\backgroundTower.png" />
+    <Content Include="examples\sticker-knight\map\backgroundTower.png.import" />
+    <Content Include="examples\sticker-knight\map\backgroundTree.png" />
+    <Content Include="examples\sticker-knight\map\backgroundTree.png.import" />
+    <Content Include="examples\sticker-knight\map\blobBlue.png" />
+    <Content Include="examples\sticker-knight\map\blobBlue.png.import" />
+    <Content Include="examples\sticker-knight\map\blobGreen.png" />
+    <Content Include="examples\sticker-knight\map\blobGreen.png.import" />
+    <Content Include="examples\sticker-knight\map\blue.png" />
+    <Content Include="examples\sticker-knight\map\blue.png.import" />
+    <Content Include="examples\sticker-knight\map\bombStroked.png" />
+    <Content Include="examples\sticker-knight\map\bombStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\castleWall.png" />
+    <Content Include="examples\sticker-knight\map\castleWall.png.import" />
+    <Content Include="examples\sticker-knight\map\cloud.png" />
+    <Content Include="examples\sticker-knight\map\cloud.png.import" />
+    <Content Include="examples\sticker-knight\map\column1.png" />
+    <Content Include="examples\sticker-knight\map\column1.png.import" />
+    <Content Include="examples\sticker-knight\map\column2.png" />
+    <Content Include="examples\sticker-knight\map\column2.png.import" />
+    <Content Include="examples\sticker-knight\map\doorBlueStroked.png" />
+    <Content Include="examples\sticker-knight\map\doorBlueStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\doorGreenStroke.png" />
+    <Content Include="examples\sticker-knight\map\doorGreenStroke.png.import" />
+    <Content Include="examples\sticker-knight\map\doorRedStroked.png" />
+    <Content Include="examples\sticker-knight\map\doorRedStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\doorStroked.png" />
+    <Content Include="examples\sticker-knight\map\doorStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\earthWall.png" />
+    <Content Include="examples\sticker-knight\map\earthWall.png.import" />
+    <Content Include="examples\sticker-knight\map\earthWall2.png" />
+    <Content Include="examples\sticker-knight\map\earthWall2.png.import" />
+    <Content Include="examples\sticker-knight\map\exit.png" />
+    <Content Include="examples\sticker-knight\map\exit.png.import" />
+    <Content Include="examples\sticker-knight\map\flare.png" />
+    <Content Include="examples\sticker-knight\map\flare.png.import" />
+    <Content Include="examples\sticker-knight\map\gemBlueStroked.png" />
+    <Content Include="examples\sticker-knight\map\gemBlueStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\gemRedStroked.png" />
+    <Content Include="examples\sticker-knight\map\gemRedStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\grassLarge.png" />
+    <Content Include="examples\sticker-knight\map\grassLarge.png.import" />
+    <Content Include="examples\sticker-knight\map\grassSmall.png" />
+    <Content Include="examples\sticker-knight\map\grassSmall.png.import" />
+    <Content Include="examples\sticker-knight\map\grey.png" />
+    <Content Include="examples\sticker-knight\map\grey.png.import" />
+    <Content Include="examples\sticker-knight\map\hero.png" />
+    <Content Include="examples\sticker-knight\map\hero.png.import" />
+    <Content Include="examples\sticker-knight\map\keyGreenStroked.png" />
+    <Content Include="examples\sticker-knight\map\keyGreenStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\keyRedStroked.png" />
+    <Content Include="examples\sticker-knight\map\keyRedStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\keyYellowStroked.png" />
+    <Content Include="examples\sticker-knight\map\keyYellowStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\platform1.png" />
+    <Content Include="examples\sticker-knight\map\platform1.png.import" />
+    <Content Include="examples\sticker-knight\map\platform2.png" />
+    <Content Include="examples\sticker-knight\map\platform2.png.import" />
+    <Content Include="examples\sticker-knight\map\platform3.png" />
+    <Content Include="examples\sticker-knight\map\platform3.png.import" />
+    <Content Include="examples\sticker-knight\map\platform4.png" />
+    <Content Include="examples\sticker-knight\map\platform4.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBase1.png" />
+    <Content Include="examples\sticker-knight\map\platformBase1.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBase2.png" />
+    <Content Include="examples\sticker-knight\map\platformBase2.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBase3.png" />
+    <Content Include="examples\sticker-knight\map\platformBase3.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBase4.png" />
+    <Content Include="examples\sticker-knight\map\platformBase4.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBlock1.png" />
+    <Content Include="examples\sticker-knight\map\platformBlock1.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBlock2.png" />
+    <Content Include="examples\sticker-knight\map\platformBlock2.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBlock3.png" />
+    <Content Include="examples\sticker-knight\map\platformBlock3.png.import" />
+    <Content Include="examples\sticker-knight\map\platformBlock4.png" />
+    <Content Include="examples\sticker-knight\map\platformBlock4.png.import" />
+    <Content Include="examples\sticker-knight\map\platformConnector1.png" />
+    <Content Include="examples\sticker-knight\map\platformConnector1.png.import" />
+    <Content Include="examples\sticker-knight\map\platformConnector2.png" />
+    <Content Include="examples\sticker-knight\map\platformConnector2.png.import" />
+    <Content Include="examples\sticker-knight\map\platformConnector3.png" />
+    <Content Include="examples\sticker-knight\map\platformConnector3.png.import" />
+    <Content Include="examples\sticker-knight\map\platformConnector4.png" />
+    <Content Include="examples\sticker-knight\map\platformConnector4.png.import" />
+    <Content Include="examples\sticker-knight\map\pushBlock1.png" />
+    <Content Include="examples\sticker-knight\map\pushBlock1.png.import" />
+    <Content Include="examples\sticker-knight\map\pushBlock2.png" />
+    <Content Include="examples\sticker-knight\map\pushBlock2.png.import" />
+    <Content Include="examples\sticker-knight\map\pushBlock3.png" />
+    <Content Include="examples\sticker-knight\map\pushBlock3.png.import" />
+    <Content Include="examples\sticker-knight\map\sandbox.tmx" />
+    <Content Include="examples\sticker-knight\map\sandbox2.tmx" />
+    <Content Include="examples\sticker-knight\map\shadow.png" />
+    <Content Include="examples\sticker-knight\map\shadow.png.import" />
+    <Content Include="examples\sticker-knight\map\shieldStroked.png" />
+    <Content Include="examples\sticker-knight\map\shieldStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\sign.png" />
+    <Content Include="examples\sticker-knight\map\sign.png.import" />
+    <Content Include="examples\sticker-knight\map\skeleton.png" />
+    <Content Include="examples\sticker-knight\map\skeleton.png.import" />
+    <Content Include="examples\sticker-knight\map\swordStroked.png" />
+    <Content Include="examples\sticker-knight\map\swordStroked.png.import" />
+    <Content Include="examples\sticker-knight\map\torch.png" />
+    <Content Include="examples\sticker-knight\map\torch.png.import" />
+    <Content Include="examples\sticker-knight\map\trap.png" />
+    <Content Include="examples\sticker-knight\map\trap.png.import" />
+    <Content Include="examples\sticker-knight\map\wallDecor1.png" />
+    <Content Include="examples\sticker-knight\map\wallDecor1.png.import" />
+    <Content Include="examples\sticker-knight\map\wallDecor2.png" />
+    <Content Include="examples\sticker-knight\map\wallDecor2.png.import" />
+    <Content Include="examples\sticker-knight\map\wallDecor3.png" />
+    <Content Include="examples\sticker-knight\map\wallDecor3.png.import" />
+    <Content Include="examples\sticker-knight\map\window1.png" />
+    <Content Include="examples\sticker-knight\map\window1.png.import" />
+    <Content Include="examples\sticker-knight\map\window2.png" />
+    <Content Include="examples\sticker-knight\map\window2.png.import" />
+    <Content Include="examples\sticker-knight\map\window3.png" />
+    <Content Include="examples\sticker-knight\map\window3.png.import" />
+    <Content Include="examples\sticker-knight\preview.png" />
+    <Content Include="examples\sticker-knight\preview.png.import" />
+    <Content Include="examples\sticker-knight\README.md" />
+    <Content Include="examples\sticker-knight\sprites.png" />
+    <Content Include="examples\sticker-knight\sprites.png.import" />
+    <Content Include="examples\sticker-knight\ui\backgroundSet.png" />
+    <Content Include="examples\sticker-knight\ui\backgroundSet.png.import" />
+    <Content Include="examples\sticker-knight\ui\block.png" />
+    <Content Include="examples\sticker-knight\ui\block.png.import" />
+    <Content Include="examples\sticker-knight\ui\buttonHelp.png" />
+    <Content Include="examples\sticker-knight\ui\buttonHelp.png.import" />
+    <Content Include="examples\sticker-knight\ui\buttonStart.png" />
+    <Content Include="examples\sticker-knight\ui\buttonStart.png.import" />
+    <Content Include="examples\sticker-knight\ui\cloud.png" />
+    <Content Include="examples\sticker-knight\ui\cloud.png.import" />
+    <Content Include="examples\sticker-knight\ui\gem.png" />
+    <Content Include="examples\sticker-knight\ui\gem.png.import" />
+    <Content Include="examples\sticker-knight\ui\heart.png" />
+    <Content Include="examples\sticker-knight\ui\heart.png.import" />
+    <Content Include="examples\sticker-knight\ui\helpBackground.png" />
+    <Content Include="examples\sticker-knight\ui\helpBackground.png.import" />
+    <Content Include="examples\sticker-knight\ui\shield.png" />
+    <Content Include="examples\sticker-knight\ui\shield.png.import" />
+    <Content Include="examples\sticker-knight\ui\title.json" />
+    <Content Include="examples\sticker-knight\ui\title.png" />
+    <Content Include="examples\sticker-knight\ui\title.png.import" />
+    <Content Include="examples\test_hexagonal_tile_60x60x30.png" />
+    <Content Include="examples\test_hexagonal_tile_60x60x30.png.import" />
+    <Content Include="examples\test_hexagonal_tile_60x60x30.tmx" />
+    <Content Include="examples\tmw_desert_spacing.png" />
+    <Content Include="examples\tmw_desert_spacing.png.import" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atko.Godot.Tiled", "Atko.Godot.Tiled\Atko.Godot.Tiled.csproj", "{BE7344CA-7B22-4CFC-B3C6-87CAF3147432}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atko.Godot.Tiled.Tests", "Atko.Godot.Tiled.Tests\Atko.Godot.Tiled.Tests.csproj", "{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{BE7344CA-7B22-4CFC-B3C6-87CAF3147432}.Release|x64.Build.0 = Release|Any CPU
 		{BE7344CA-7B22-4CFC-B3C6-87CAF3147432}.Release|x86.ActiveCfg = Release|Any CPU
 		{BE7344CA-7B22-4CFC-B3C6-87CAF3147432}.Release|x86.Build.0 = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|x64.Build.0 = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Debug|x86.Build.0 = Debug|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|x64.ActiveCfg = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|x64.Build.0 = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|x86.ActiveCfg = Release|Any CPU
+		{49ACF81E-7FA2-4578-A2B0-B745CC8E34DE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
