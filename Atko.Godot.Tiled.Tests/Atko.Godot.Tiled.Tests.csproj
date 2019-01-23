@@ -38,10 +38,9 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Atko.Godot.Tiled, Version=0.0.3.2, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\Atko.Godot.Tiled.0.0.3.2\lib\netstandard2.0\Atko.Godot.Tiled.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <ProjectReference Include="../Atko.Godot.Tiled/Atko.Godot.Tiled.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="GodotSharp">
       <HintPath>$(ProjectDir)/.mono/assemblies/GodotSharp.dll</HintPath>
       <Private>False</Private>
@@ -51,17 +50,10 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>packages\System.Xml.Linq.3.5.21022.801\lib\net20\System.Xml.Linq.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="examples\buch-outdoor.png" />
@@ -253,6 +245,7 @@
     <Content Include="examples\sticker-knight\ui\title.json" />
     <Content Include="examples\sticker-knight\ui\title.png" />
     <Content Include="examples\sticker-knight\ui\title.png.import" />
+    <Content Include="examples\test.tmx" />
     <Content Include="examples\test_hexagonal_tile_60x60x30.png" />
     <Content Include="examples\test_hexagonal_tile_60x60x30.png.import" />
     <Content Include="examples\test_hexagonal_tile_60x60x30.tmx" />

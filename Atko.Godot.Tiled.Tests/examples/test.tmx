@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <tileset firstgid="1" source="Tilesets/test.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6Grf9OTsQ8krJqqqqqqqqqqqqqqqqqqqqr6+gB+ABAB
+  </data>
+ </layer>
+ <layer id="4" name="stumps" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJADAIBDBXsvsPVztCEQrSBHz4Pw+MAAAAAAAAgHtZsxo7TNTNsTsAptJ/wK/0H4f/FwAAAACAlzaBfwVr
+  </data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt2KkSwjAYRWEMO4Ydw45hx7Dz/s/FNTEomkk6f9PzzRwRE3mnTaUCAAAAAAAAAP9rqpZqq06Es3VDNVJjNYlwtm6pVmqtNhHO1h3VSZ3VJcLZuqd6qbf6RDhb97tXW7VTe3XwOBd9/67qpu7q4XEu+v5Zuy+20HtV9P2zdl9sofaqqmoB78tLqL3qql7A+/ISaq+mahbwvryE2iv3HVDW/XPfAUXfv7pqeNyTyv711cDjnlT2b64WHveksn/uPyarVPbP/cdklcr+8f7H+x/vf7z/leX9DwAAAAAAALDiCzAfOh4=
+  </data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt1jcOQ0EIBUA3Dq1D69A6tA73P5lpOMCilVZ/NSO9ggKJClitAAAAAAAAaLWN7Ap968im8ywjHCOnQt8+cug8ywjXyK3Qd45c+o4yxDPyKvTdI4/Os4zwjfwKfe/Ip/MsI1T33yyq+28W1f03i+r+m0V1/8EM8o/PO9haL13+8XkHW+ulyz8+72BrDQAAAAAA0OIPQToHFg==
+  </data>
+ </layer>
+ <layer id="8" name="invisiwall" width="64" height="64" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt17ENACAMA8EMwv5zMgNygZLcSZQuPh1VAAAAAAAA8OaEr7ukYcIN9Gdb/b3pz7b6e9OfbfX3pj/bTujf/Afa3A4AAAAAAD9cax4JTQ==
+  </data>
+ </layer>
+ <objectgroup id="6" name="entrances">
+  <object id="2" gid="4" x="448" y="512" width="16" height="16">
+   <properties>
+    <property name="id" value="west_forest"/>
+    <property name="type" value="entrance"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
