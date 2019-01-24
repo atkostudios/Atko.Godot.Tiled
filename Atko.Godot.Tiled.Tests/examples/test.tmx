@@ -21,7 +21,7 @@
    eJzt1jcOQ0EIBUA3Dq1D69A6tA73P5lpOMCilVZ/NSO9ggKJClitAAAAAAAAaLWN7Ap968im8ywjHCOnQt8+cug8ywjXyK3Qd45c+o4yxDPyKvTdI4/Os4zwjfwKfe/Ip/MsI1T33yyq+28W1f03i+r+m0V1/8EM8o/PO9haL13+8XkHW+ulyz8+72BrDQAAAAAA0OIPQToHFg==
   </data>
  </layer>
- <layer id="8" name="invisiwall" width="64" height="64" visible="0">
+ <layer id="8" name="invisiwall" width="64" height="64">
   <data encoding="base64" compression="zlib">
    eJzt17ENACAMA8EMwv5zMgNygZLcSZQuPh1VAAAAAAAA8OaEr7ukYcIN9Gdb/b3pz7b6e9OfbfX3pj/bTujf/Afa3A4AAAAAAD9cax4JTQ==
   </data>

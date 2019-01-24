@@ -35,7 +35,7 @@ namespace Atko.Godot.Tiled.Tmx {
         }
 
         public Transform2D GetShapeTransform() {
-            return new Transform2D(new Vector2(), new Vector2(), new Vector2(Width / 2, Height / 2));;
+            return new Transform2D(new Vector2(), new Vector2(), new Vector2(Width / 2, Height / 2));
         }
     }
 }

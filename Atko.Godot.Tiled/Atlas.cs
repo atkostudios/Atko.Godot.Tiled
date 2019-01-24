@@ -82,12 +82,12 @@ namespace Atko.Godot.Tiled {
                     tileset.CreateTile(gid);
                     tileset.TileSetName(gid, tmxTileset.TmxName + " Gid: " + gid);
                     tileset.TileSetTexture(gid, tmxTileset.SpriteSheetTexture);
+                    tileset.TileSetTextureOffset(gid, new Vector2(-tmxTileset.TileWidth / 2, -tmxTileset.TileHeight / 2));
                     tileset.TileSetRegion(gid, GetRegionInTileset(gid, tmxTileset));
                 }
                 
                 tmxTileset.CollisionTiles.ForEach(t => {
                     tileset.TileSetShape(t.Id + 1, t.ObjectId, t.GetShape());
-                    tileset.TileSetShapeTransform(t.Id + 1, t.ObjectId, t.GetShapeTransform());
                 });
             });
 
