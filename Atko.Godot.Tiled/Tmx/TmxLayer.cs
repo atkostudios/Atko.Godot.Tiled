@@ -14,14 +14,14 @@ namespace Atko.Godot.Tiled.Tmx {
         public XElement Data;
         public List<TmxChunk> Chunks = new List<TmxChunk>();
         public TileSet Tileset;
-        public bool IsVisible;
+        public bool LayerIsVisible;
         
         public TmxLayer(XElement tmxElement, TileSet tileset, float tileWidth, float tileHeight, bool infinite = false) {
             TmxId = tmxElement.Attribute("id")?.Value;
             TmxName = tmxElement.Attribute("name")?.Value;
             Width = tmxElement.Attribute("width")?.Value.ToInt() ?? 0;
             Height = tmxElement.Attribute("height")?.Value.ToInt() ?? 0;
-            IsVisible = tmxElement.Attribute("visible") == null;
+            LayerIsVisible = tmxElement.Attribute("visible") == null;
             IsInfinite = infinite;
             Data = tmxElement.Element("data");
             TileWidth = tileWidth;
@@ -43,7 +43,7 @@ namespace Atko.Godot.Tiled.Tmx {
             }
             
             Chunks.ForEach(GenerateChunk);
-            SetVisible(IsVisible);
+            SetVisible(LayerIsVisible);
         }
         
         void GenerateChunk(TmxChunk chunk) {
